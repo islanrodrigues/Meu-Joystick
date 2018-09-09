@@ -25,4 +25,10 @@
         <item name="android:backgroundTint">#ff2a2a</item>
     </style>
 
+    <style name="button_arrow" parent="Base.Widget.AppCompat.Button">
+        <item name="android:backgroundTint">#808080</item>
+    </style>
+
+
+
 </resources>
