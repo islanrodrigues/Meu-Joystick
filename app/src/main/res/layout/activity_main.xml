@@ -11,26 +11,45 @@
     <!-- Layout do botão de conexão bluetooth -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp">
+
+            <Button
+                android:id="@+id/btn_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Bluetooth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="5dp"
+                 />
+
+        </android.support.constraint.ConstraintLayout>
 
     </LinearLayout>
 
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
        <!-- 1º layout - botões de movimento -->
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_weight="50"
+        android:layout_weight="45"
         android:layout_height="match_parent"
         android:id="@+id/comandos_layout"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:padding="10dp"
         android:orientation="horizontal">
 
@@ -38,8 +57,8 @@
             android:layout_width="0dp"
             android:layout_weight="90"
             android:layout_height="match_parent"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -55,7 +74,7 @@
 
                 <ImageButton android:theme="@style/button_arrow"
                     android:id="@+id/btn_top"
-                    android:layout_width="65dp"
+                    android:layout_width="60dp"
                     android:layout_height="130dp"
                     android:background="@drawable/generic_btn"
                     app:layout_constraintTop_toTopOf="@id/imageView_1"
@@ -67,7 +86,7 @@
 
                 <ImageButton android:theme="@style/button_arrow"
                     android:id="@+id/btn_bottom"
-                    android:layout_width="65dp"
+                    android:layout_width="60dp"
                     android:layout_height="130dp"
                     android:background="@drawable/generic_btn"
                     app:layout_constraintBottom_toBottomOf="@id/imageView_1"
@@ -86,18 +105,18 @@
                     app:layout_constraintBottom_toBottomOf="@id/imageView_1"
                     app:layout_constraintStart_toStartOf="@id/imageView_1"
                     android:layout_marginLeft="15dp"
-                    android:paddingRight="65dp"
+                    android:paddingRight="80dp"
                     android:src="@drawable/arrow_left" />
 
                 <ImageButton android:theme="@style/button_arrow"
                     android:id="@+id/btn_right"
                     android:layout_width="140dp"
-                    android:layout_height="65dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/generic_btn"
                     app:layout_constraintTop_toTopOf="@id/imageView_1"
                     app:layout_constraintBottom_toBottomOf="@id/imageView_1"
                     app:layout_constraintEnd_toEndOf="@id/imageView_1"
-                    android:paddingLeft="70dp"
+                    android:paddingLeft="80dp"
                     android:layout_marginRight="15dp"
                     android:src="@drawable/arrow_right" />
 
@@ -111,19 +130,22 @@
     <!-- 2º layout - botões de ação -->
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_weight="50"
+        android:layout_weight="45"
         android:layout_height="match_parent"
         android:id="@+id/botoes_layout"
-        android:layout_margin="15dp"
-        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="95"
             android:layout_height="match_parent"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -139,42 +161,54 @@
                     android:id="@+id/btn_blue"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
                     app:layout_constraintTop_toTopOf="@id/imageView_2"
                     app:layout_constraintStart_toStartOf="@id/imageView_2"
                     app:layout_constraintEnd_toEndOf="@id/imageView_2"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/generic_btn"/>
 
                 <Button android:theme="@style/button_yellow"
                     android:id="@+id/btn_yellow"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:text="B"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
                     app:layout_constraintBottom_toBottomOf="@id/imageView_2"
                     app:layout_constraintStart_toStartOf="@id/imageView_2"
                     app:layout_constraintEnd_toEndOf="@id/imageView_2"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="15dp"
                     android:background="@drawable/generic_btn"/>
 
                 <Button android:theme="@style/button_green"
                     android:id="@+id/btn_green"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:text="Y"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
                     app:layout_constraintTop_toTopOf="@id/imageView_2"
                     app:layout_constraintBottom_toBottomOf="@id/imageView_2"
                     app:layout_constraintStart_toStartOf="@id/imageView_2"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/generic_btn"/>
 
                 <Button android:theme="@style/button_red"
                     android:id="@+id/btn_red"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:text="A"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
                     app:layout_constraintTop_toTopOf="@id/imageView_2"
                     app:layout_constraintBottom_toBottomOf="@id/imageView_2"
                     app:layout_constraintEnd_toEndOf="@id/imageView_2"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/generic_btn"/>
 
             </android.support.constraint.ConstraintLayout>
