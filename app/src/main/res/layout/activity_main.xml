@@ -121,6 +121,7 @@
                     android:src="@drawable/arrow_right" />
 
                 <ImageButton
+                    android:id="@+id/btn_top_right"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toEndOf="@id/btn_left"
@@ -134,6 +135,7 @@
                     android:src="@drawable/arrow_top_right"/>
 
                 <ImageButton
+                    android:id="@+id/btn_bottom_right"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toEndOf="@id/btn_left"
@@ -147,6 +149,7 @@
                     android:src="@drawable/arrow_bottom_right"/>
 
                 <ImageButton
+                    android:id="@+id/btn_top_left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="@id/btn_left"
@@ -160,6 +163,7 @@
                     android:src="@drawable/arrow_top_left"/>
 
                 <ImageButton
+                   android:id="@+id/btn_bottom_left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="@id/btn_left"

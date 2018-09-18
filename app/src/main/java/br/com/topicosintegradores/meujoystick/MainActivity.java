@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton buttonTop, buttonBottom, buttonLeft, buttonRight;
+    private ImageButton buttonTopRight, buttonTopLeft, buttonBottomRight, buttonBottomLeft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         buttonBottom = (ImageButton) findViewById(R.id.btn_bottom);
         buttonLeft = (ImageButton) findViewById(R.id.btn_left);
         buttonRight = (ImageButton) findViewById(R.id.btn_right);
+        buttonTopRight = (ImageButton) findViewById(R.id.btn_top_right);
+        buttonTopLeft = (ImageButton) findViewById(R.id.btn_top_left);
+        buttonTopRight = (ImageButton) findViewById(R.id.btn_top_right);
+        buttonBottomRight = (ImageButton) findViewById(R.id.btn_bottom_right);
+        buttonBottomLeft = (ImageButton) findViewById(R.id.btn_bottom_left);
     }
 
 }
