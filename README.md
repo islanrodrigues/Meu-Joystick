@@ -18,7 +18,7 @@ Este é parte integrante de um projeto acadêmico pertencente à disciplina de T
 - - - 
 
 ### 3. Integrantes do Projeto
-+ [Islan Rodrigues](https://www.linkedin.com/in/daniel-r-513983124/)
++ [Islan Rodrigues](https://br.linkedin.com/in/islan-rodrigues-44723b11a)
 + [João Paulo Amaral](https://www.linkedin.com/in/jo%C3%A3o-paulo-918535123/)
 + [Gabriel Pereira Santos](https://www.linkedin.com/in/gabrielpereirasantos/)
 + [Cainan Sena](https://www.linkedin.com/in/cainan-sena-8a196911a/)
