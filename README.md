@@ -12,6 +12,8 @@ Este é parte integrante de um projeto acadêmico pertencente à disciplina de T
 ### 2. Funcionalidades do Aplicativo
    O aplicativo deve permitir a comunicação com a placa Arduino via Bluetooth. Depois de estabelecida a comunicação, o aplicativo 
 	 deve mandar comandos básicos de movimento para o carrinho (acelerar, parar, virar para a esquerda, virar a direita etc).
+
+![Aparência do Aplicativo](/images-presentation/tela-app.jpeg "Aparência do Aplicativo")
 	 
 - - - 
 
